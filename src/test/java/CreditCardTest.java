@@ -39,16 +39,18 @@ public class CreditCardTest {
     public void canGetTransactionCost(){
         assertEquals(0.4, creditCard1.transactionCost(20),0.01);
     }
-//    @Test
-//    public void canLogTransaction(){
-//        assertEquals(System.out.println("You have spent" + 20.4), creditCard1.logTransaction(20));
-//
-//    }
+
+    @Test
+    public void canLogTransaction(){
+        assertEquals("You have spent 20.0", creditCard1.logTransaction(20.0));
+    }
 
     @Test
     public void canReduceAvailableCredit(){
         assertEquals(4980.0, creditCard1.reduceAvailableCredit(20), 0.01);
     }
+
+
 
 
 

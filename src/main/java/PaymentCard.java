@@ -22,4 +22,6 @@ public abstract class PaymentCard{
     public int getSecurityNumber() {
         return securityNumber;
     }
+
+
 }

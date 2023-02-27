@@ -9,4 +9,9 @@ public class GiftCard {
     public int getBalance() {
         return balance;
     }
+
+    public double UseGiftCard(double amount){
+        return this.balance - amount;
+    }
+
 }

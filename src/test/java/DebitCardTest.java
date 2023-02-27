@@ -34,4 +34,9 @@ public class DebitCardTest {
         assertEquals("45-67-90", debitCard1.getSortCode());
     }
 
+    @Test
+    public void canLogTransaction(){
+        assertEquals("You have spent 32.0", debitCard1.logTransaction(32.0));
+    }
+
 }
